@@ -4,11 +4,11 @@ int maxSubArray( int *nums, int numsSize ) {
 	int resposta = 0;
 	int soma;
 
-	for (i = 0; i < numsSize; i++){
+	for ( i = 0; i < numsSize; i++ ) {
 		soma = 0;
-		for (j = i; j < numsSize; j++){
+		for ( j = i; j < numsSize; j++ ) {
 			soma += nums[j];
-			if(soma > resposta || resposta == 0){
+			if( soma > resposta || resposta == 0 ) {
 				resposta = soma;
 			}
 		}
