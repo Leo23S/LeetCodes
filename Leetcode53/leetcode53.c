@@ -1,15 +1,15 @@
-int maxSubArray(int* nums, int numsSize) {
+int maxSubArray( int* nums, int numsSize ) {
     int i;
 	int resposta = nums[0];
 	int soma = nums[0];
 
-	for (i = 0; i < numsSize; i++){
-			if (soma + nums[i] > nums[i]){
+	for ( i = 0; i < numsSize; i++ ) {
+			if ( soma + nums[i] > nums[i] ) {
                 soma += nums[i];
-            }else{
+            } else {
                 soma = nums[i];
             }
-			if(soma > resposta){
+			if( soma > resposta ){
 				resposta = soma;
 			}
 		}
