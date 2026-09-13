@@ -3,7 +3,7 @@ int maxSubArray( int* nums, int numsSize ) {
 	int resposta = nums[0];
 	int soma = nums[0];
 
-	for ( i = 0; i < numsSize; i++ ) {
+	for ( i = 1; i < numsSize; i++ ) {
 			if ( soma + nums[i] > nums[i] ) {
                 soma += nums[i];
             } else {
