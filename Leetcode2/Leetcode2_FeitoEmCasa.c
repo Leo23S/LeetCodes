@@ -116,8 +116,8 @@ struct ListNode *addTwoNumbers( struct ListNode *l1, struct ListNode *l2 ) {
 	struct ListNode *digito1;
 	struct ListNode *digito2;
 	struct ListNode *digitoRes;
-	res = malloc (sizeof(struct ListNode));
-	if (res == NULL){
+	res = malloc ( sizeof( struct ListNode ) );
+	if ( res == NULL){
 		printf("erro na alocacao de memoria");
 	}
     res->next = NULL;
