@@ -1,10 +1,5 @@
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     struct TreeNode *left;
- *     struct TreeNode *right;
- * };
+/*
+This LeetCode was made during the time i was learning tree structures
  */
 bool isSameTree(struct TreeNode* p, struct TreeNode* q) {
     if (p != NULL && q != NULL){
