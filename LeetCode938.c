@@ -1,0 +1,26 @@
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     struct TreeNode *left;
+ *     struct TreeNode *right;
+ * };
+ */
+int rangeSumBST(struct TreeNode* root, int low, int high) {
+    int sum = 0;
+    if (root == NULL){
+        return sum;
+    }
+
+    if ( root->val >= low && root->val <= high ){
+        sum += root->val; // sum = 10
+    }
+  
+    if (root->left != NULL){
+        sum += rangeSumBST(root->left, low, high); //sum +=5 //sum += 3
+    }
+    if (root->right != NULL){
+        sum += rangeSumBST(root->right, low, high);
+    }
+    return sum;
+}
